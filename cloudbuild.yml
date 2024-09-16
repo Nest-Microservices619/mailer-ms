@@ -1,0 +1,22 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "northamerica-northeast1-docker.pkg.dev/microservices-432222/image-registro/mailer-ms",
+        "-f",
+        "dockerfile.prod",
+        "--platform=linux/amd64",
+        ".",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "northamerica-northeast1-docker.pkg.dev/microservices-432222/image-registro/mailer-ms",
+      ]
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+  
