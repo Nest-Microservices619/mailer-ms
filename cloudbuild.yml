@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "northamerica-northeast1-docker.pkg.dev/microservices-432222/image-registro/mailer-ms",
+        "northamerica-northeast1-docker.pkg.dev/lofty-defender-435803-h9/microservicios/mailer-ms",
         "-f",
         "dockerfile.prod",
         "--platform=linux/amd64",
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "northamerica-northeast1-docker.pkg.dev/microservices-432222/image-registro/mailer-ms",
+        "northamerica-northeast1-docker.pkg.dev/lofty-defender-435803-h9/microservicios/mailer-ms",
       ]
 options:
   logging: CLOUD_LOGGING_ONLY
